@@ -1,0 +1,14 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "C++ OpenCV OpenMP",
+  "image": "mcr.microsoft.com/devcontainers/cpp:1-ubuntu-24.04",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y libopencv-dev build-essential pkg-config",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools",
+        "ms-vscode.cmake-tools"
+      ]
+    }
+  }
+}
